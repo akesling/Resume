@@ -1,0 +1,123 @@
+% Alex Kesling's Resume
+% Original Creation: 2, Feb, 2010
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[11pt]{article}
+
+%Fix problems with margins
+\usepackage[margin=1.6cm, paperwidth=8.5in, paperheight=11in]{geometry}
+\hoffset 3cm
+\headsep 0pt
+%\smallskip
+\marginparwidth 3.5cm
+\marginparsep 0pt
+\footskip 0cm
+\textwidth 6in
+\textheight 10in
+
+
+\usepackage{fancyhdr}
+\setlength{\headheight}{18pt}
+\pagestyle{fancy}
+
+\title{Resume}
+\author{Alexander H. Kesling}
+\date{8 September 2010}
+\begin{document}
+    \newenvironment{itemz}[1][\labelitemi]{
+        \begin{list}{#1}{\leftmargin=0.9em}
+            \setlength{\itemsep}{0pt}
+            \setlength{\parskip}{0pt}
+            \setlength{\parsep}{0pt}
+            \setlength{\parindent}{0.2cm}
+        }{
+            \end{list}
+        }
+    \emph{\scriptsize References available upon request}
+    \fancyhf{}
+    \lhead{ \bf Alexander H. Kesling }
+    \reversemarginpar{\emph{\begin{flushleft} Phone: (919) 259.0457 \\ Email: ahkeslin@ncsu.edu \\* \end{flushleft}}}
+    % \maketitle
+    \footnotesize
+    \marginpar{\bf \normalsize{Education}}
+        \begin{itemz}
+            \setlength{\itemsep}{0pt}
+            \setlength{\parskip}{0pt}
+            \setlength{\parsep}{0pt}
+            \item North Carolina State University (Graduation in 2013) \\ {\bf \scriptsize \emph{Double Major in Computer Science \& Applied Math}}            \\
+                \begin{tabular}{ c c }
+                    \multicolumn{2}{c}{}\\
+                    \multicolumn{2}{c}{\bf Completed (Cumulative GPA 3.831)
+                    \vspace{0.2em}} \\
+                    Programming I \& II: Java   & C \& Software Tools \\
+                    Computer Architecture and Assembly \emph{(x86 Assembler)} & Discrete Math \\
+                    Data Structures             & Linear Algebra \\
+                    Operating Systems           & Computational Music Composition \\
+                    Automata, Grammars, and Computability & Combinatorics \\ 
+                    Software Engineering        & Probability\\
+                \end{tabular}
+        \end{itemz}
+
+    \marginpar{\bf \normalsize{Work Experience}}
+        \begin{itemz}
+            \item Sidewalk Media Inc., Durham NC
+                \begin{itemz}[-]
+                    \item Lead Developer / CTO (Fall 2010 - Present)
+                        \begin{itemz}[*]
+                            \item Worked on a mobile couponing platform in a similar space to Groupon Now and Livingsocial Instant.
+                            \item Worked closely with a third party contractor in the development of an {\bf HTML5} based {\bf Sencha Touch} mobile web application.
+                            \item Developed a simple {\bf RESTful API} for communication between a server-side {\bf Django} application and an {\bf iPhone} client. Backend was supported by {\bf SQLite} during development and {\bf MySQL} in production.
+                        \end{itemz}
+                \end{itemz}
+            \item Red Hat Inc., Raleigh NC
+                \begin{itemz}[-]
+                    \item Software Engineering Intern (Summer 2010)
+                        \begin{itemz}[*]
+                            \item Contributed to the open source {\bf Cobbler} provisioning server project \\
+                            (https://fedorahosted.org/cobbler/).  Cobbler is written in {\bf Python} with an {\bf XMLRPC} API layer catering to both command line and web based ({\bf Django}) front ends.
+                        \end{itemz}
+                    \item Software Engineering Intern (Summer 2009)
+                        \begin{itemz}[*]
+                            \item Headed the development of a {\bf Django} and {\bf JQuery} based Internal Timesheet application.  I was greatly helped in my endeavors by an intern on the QA team.
+                            \item Worked on {\bf Agilefant} (http://www.agilefant.org), a web-based \emph{open source} Agile Software Project Management Suite. {\bf Agilefant} is written in {\bf Java} using {\bf Spring}, {\bf Webwork}, and {\bf Hibernate}.
+                            \item Managed Red Hat Summer Intern Video Production
+                        \end{itemz}
+                \end{itemz}
+            \item Shodor Education Foundation, Durham NC
+                \begin{itemz}[-]
+                    \item System Administration Internship (Jun 2006 -- Aug 2008)
+                        \begin{itemz}[*]
+                            \item Made {\bf Fedora 9} run on a {\bf LittleFe} (6 node, one hard drive, tiny beowulf cluster)
+                            \item Worked with a fellow intern to set up a full {\bf  Nagios} installation for Shodor's infrastructure
+                            \item Set up a working {\bf Jabber} server ({\bf OpenFire}) and configured it to authenticate with {\bf LDAP}
+                            \item Wrote administrative tools in {\bf PHP}
+                            \item Administered {\bf Linux} ({\bf SuSe}, {\bf Fedora}) and {\bf Mac OS X} workstations as well as various server infrastructure ({\bf SuSe}, {\bf CentOS})
+                            \item Managed virtualized servers using {\bf Xen} and associated tools
+                            \item Developed in-house {\bf RPMs} and maintained a basic {\bf YUM repository}
+                        \end{itemz}
+                    \item SUCCEED Apprenticeship (Apr 2006 -- Jun 2007)
+                        \begin{itemz}[*]
+                            \item Worked with six fellow Apprentices to build a website for The North Carolina School of Science and Math using {\bf PHP} with a {\bf MySQL} back-end database
+                        \end{itemz}
+                \end{itemz}
+        \end{itemz}
+    
+    \marginpar{\bf \normalsize{Technical Skills / \\* Experience}}
+        \begin{itemz}
+            \setlength{\itemsep}{0pt}
+            \setlength{\parskip}{0pt}
+            \setlength{\parsep}{0pt}
+            \item Clubs/Extracurricular Activities
+                \begin{itemz}[-]
+                    \item Aerial Robotics Club
+                        \begin{itemz}[*]
+                            \item Attended 2009, 2010 \& 2011 AUVSI Student UAS Competitions in Maryland
+                            \item The team brought home $1^{st}$ place overall in 2010 and $2^{nd}$ place in 2011
+                            \item Helped in the development and continued maintenance of an imagery viewer designed for assisting in the finding of targets distributed throughout an open area.  This viewer is written in {\bf C++} using the {\bf OpenSceneGraph} framework built on top of {\bf OpenGL}.  It pulls imagery information from a {\bf GIS} enabled {\bf PostgreSQL} database.
+                        \end{itemz}
+                    \item NCSU Linux Users Group
+                \end{itemz}
+            \item Intermediate administration of various Linux distributions (I also run Fedora as my primary OS)
+        \end{itemz}
+\end{document}
